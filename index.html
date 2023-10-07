@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="author" content="Dhruv Garg">
+            <meta name="description" content="This is a Health Care web app prototype">
+            <meta name="keywords" content="Medi Minder">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+
+            <script src="js/p5.js"></script>
+            <script src="js/p5.dom.min.js"></script>
+            <script src="js/p5.sound.min.js"></script>
+            <script src="js/p5.play.js"></script>
+
+            <script src="Component/login.js"></script>
+            <script src="Component/dashboard.js"></script>
+
+            <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+        <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="sweetAlert/sweetalert.css">
+ <script src="sweetAlert/sweetalert.min.js"></script>
+
+ <script>
+    // Function to show the SweetAlert when the page loads
+    window.onload = function() {
+      swal("Welcome!", "This Web App is Currently A Prototype and Only has basic initial functionality.", "success");
+    };
+  </script>
+
+
+            <title>Medi Minder</title>
+            <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth-compat.js"></script>
+
+
+<script type="module">
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCSf_-_Z563UGcvd-hohSryROCstlmxXS8",
+  authDomain: "medi-minder-prototype.firebaseapp.com",
+  databaseURL: "https://medi-minder-prototype-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "medi-minder-prototype",
+  storageBucket: "medi-minder-prototype.appspot.com",
+  messagingSenderId: "442097111863",
+  appId: "1:442097111863:web:5840e364e185168c8dc0b2"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const database = firebase.database();
+const auth = firebase.auth();
+
+
+  </script>
+
+            
+
+
+        </head>
+        <body>
+        
+            <script src="sketch.js"></script>
+
+        </body>
+
+    </html>

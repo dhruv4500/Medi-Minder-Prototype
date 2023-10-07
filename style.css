@@ -1,0 +1,255 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #eef0f9;
+}
+canvas {
+  display: block;
+  
+}
+
+
+/*Start of Login Page CSS*/
+.loginHeader{
+  background-color: #0D143C;
+  width:100%;
+  box-shadow: 0px 2px 2px rgb(120, 118, 118);
+  position: fixed;
+}
+
+.loginHeaderTitle{
+  color:white;
+  font-size: 26px;
+  padding-left: 30px;
+  font-family: Inter,sans-serif;
+  font-style: italic;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+.loginHeaderTagline{
+  top:0;
+  color:white;
+  padding-left:31px;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.loginWelcomMsg{
+  align-self: center;
+  font-size:30px;
+  margin-top: 60px;
+  font-family: serif;
+  font-weight: 550;
+  color: black;
+}
+
+.loginCredentialArea{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding-left: 100px;
+
+}
+
+.loginMainArea{
+  margin-top: 70px;
+}
+
+.LoginArea{
+  width:100vw;
+  display: flex;
+}
+
+.loginSmallText{
+  font-size: 14px;
+  color:#091978;
+  font-style: italic;
+}
+
+
+.loginTextBox{
+  border-color: #131d54;
+  font-family: Inter,sans-serif;
+  font-weight: 500;
+  margin-top: 40px;
+  height:50px;
+  padding-left: 20px;
+  letter-spacing: 1.3px;
+  background-color: #158ab11f;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+}
+
+.loginTextBox::placeholder {
+  color: inherit;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.loginTextBox:focus::placeholder {
+  color: #313030;
+  font-size: 12px;
+}
+
+.loginButton {
+  margin-top: 20px;
+  height: 40px;
+  font-family: Inknut Antiqua;
+  font-weight: 600;
+  background-color: #F2FCFF;
+  border-color: #158BB1;
+  border-radius: 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #128ead;
+  border-color: #0D6096; 
+  cursor:pointer; 
+  color:white;
+}
+
+.loginPageForgetPassText{
+  color:rgb(5, 51, 116);
+  text-decoration: none;
+  margin-left:-115px;
+  font-size: 15px;
+  font-family: Inter,sans-serif;
+  margin-top: 10px;
+}
+
+.loginPageForgetPassText:hover{
+  color:rgb(9, 71, 157);
+  text-decoration: none;
+}
+
+.loginPageLine{
+  height:2px;
+  border-color: black;
+  background-color: black;
+  margin-top:30px;
+}
+.loginPageLine:hover{
+  height:2px;
+  border-color: black;
+  background-color: black;
+  margin-top:30px;
+  cursor:default;
+}
+
+.googleLoginButton{
+  margin-top:35px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-color: #ABABAB;
+  background-color: #FFFFFF;
+  font-family: Inter,sans-serif;
+  font-weight: 300;
+}
+
+
+.googleLoginButton:hover{
+  background-color: #c3c1c1;
+  font-family: Inter,sans-serif;
+  font-weight: 500;
+}
+
+.loginPageSignUpText{
+  margin-top:30px;
+  font-size: 15px;
+  font-family: Inter,sans-serif;
+  font-weight: 300;
+}
+
+#loginPageSignUpTextAnchorTag{
+  text-decoration: none;
+  color:#0d6efd;
+}
+
+#loginPageSignUpTextAnchorTag:hover{
+  text-decoration: underline;
+  color:#0d6efd;
+}
+
+.loginPageImageArea{
+  height:100%;
+  display: flex;
+  justify-content:space-around;
+}
+
+.loginPageLogoImage{
+  width:100%;
+}
+
+.loginPageImageDiv{
+  width:70%;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+
+.loginPageLoadingButton{
+  padding:5px;
+  margin-top: 20px;
+  height: 40px;
+  font-family: Inknut Antiqua;
+  font-weight: 600;
+  background-color: #F2FCFF;
+  border-color: #158BB1;
+  border-radius: 40px;
+  color:black;
+}
+
+/*End of Login Page CSS*/
+
+/*Start of Dashboard CSS*/
+
+.dbHeader{
+  background-color: #0D143C;
+  width:100%;
+  box-shadow: 0px 2px 2px rgb(120, 118, 118);
+  position: fixed;
+}
+
+.dbHeaderTitle{
+  color:white;
+  font-size: 26px;
+  padding-left: 30px;
+  font-family: Inter,sans-serif;
+  font-style: italic;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+.dbHeaderTagline{
+  top:0;
+  color:white;
+  padding-left:31px;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.dbHeaderMenu{
+  float:right;
+}
+
+.dbMainAreaDiv{
+  margin-top: 0px;
+}
+
+.dbWelcomMsg{
+  font-size: 25px;
+  font-family: itim,sans-serif;
+}
+

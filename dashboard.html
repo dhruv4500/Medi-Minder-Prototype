@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="author" content="Dhruv Garg">
+            <meta name="description" content="This is a Health Care web app prototype">
+            <meta name="keywords" content="Medi Minder">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+
+
+            <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+        <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+        
+
+            <title>Medi Minder</title>
+            <style>
+                .dbContentArea{
+                    position: absolute;
+                    margin-top: 75px;                
+                }
+                .dbContentArea h3{
+                    font-size: 23px;
+                    margin-left: 20px;
+                    font-family: Itim,sans-serif;
+                }
+                .codeZero{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .remindTitle{
+                    background-color: #082792;
+                    width:max-content;
+                    padding-left:80px;
+                    padding-right: 80px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color:white;
+                    font-family: inknut antiqua,sans-serif;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 2px black;
+                }
+
+                .reminderBox{
+                    background-color: white;
+                    width:280px;
+                    border-radius: 1px;
+                    box-shadow: 0px 1px 3px rgb(114, 112, 112);
+                    height: 35vh;
+                    overflow-y: auto;
+                }
+
+                .box{
+                    background-color: rgb(3, 0, 100);
+                    margin:5px;
+                    border-radius: 10px;
+                    color:white;
+                }
+                .box h1{
+                    font-size: 18px;
+                    padding: 10px;
+                }
+                .titleDHU{
+                    background-color: #082792;
+                    width:100%;
+                    padding-left:80px;
+                    padding-right: 80px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color:white;
+                    font-family: inknut antiqua,sans-serif;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 1px 3px rgb(114, 112, 112);
+                    text-align: center;
+                }
+                .ch{
+                    width: max-content;
+                }
+                .chh{
+                    width:75vw;
+                    margin-left: 30px;
+                }
+                .BoxDHU{
+                    background-color: white;
+                    width:max-content;
+                    margin: 5px;
+                    margin-left:30px;
+                    border-radius: 1px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    align-items: center;
+                    text-align: center;
+                    box-shadow: 0px 1px 3px rgb(114, 112, 112);
+                }
+                .BoxDHU h1{
+                    font-size:22px;
+                    font-family: jacques francois,sans-serif;
+                }
+                .BoxDHU p{
+                    font-size: 25px;
+                    color:#00736C;
+                    font-family: Inder,sans-serif;
+                    margin-top: 10px;
+                }
+                .sub1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+
+                }
+                .BoxDHU h3{
+                    color:#0EA900;
+                    font-size: 15px;
+                    margin-top: -20px;
+                }
+
+                .sub2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+
+                }
+
+                .presTitle{
+                    background-color: #082792;
+                    width:max-content;
+                    padding-left:64px;
+                    padding-right: 64px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color:white;
+                    font-family: inknut antiqua,sans-serif;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 2px black;
+                }
+                .titleDU{
+                    background-color: #082792;
+                    width:100%;
+                    padding-left:60px;
+                    padding-right: 60px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color:white;
+                    font-family: inknut antiqua,sans-serif;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 2px black;
+                    text-align: center;
+                }
+                .fdWhole{
+                    width:50vw;
+                    margin-left: 30px;
+                }
+                .some{
+                    width: max-content;
+                    float: left;
+                    height: max-content;
+                    margin-top: -35px;
+                }
+                .something{
+                    background-color: white;
+                    float: right;
+                    width:370px;
+                    height:220px;
+                    box-shadow: 0px 1px 3px rgb(114, 112, 112);
+                    overflow: auto;
+                }
+                .stBox{
+                    background-color: rgb(3, 0, 100);
+                    margin:10px;
+                    color:white;
+                    border-radius: 10px;
+                }
+                .stBox h1{
+                    margin: 10px;
+                    padding: 10px;
+                    font-size: 20px;
+                }
+                .some img{
+                    width:90%;
+                }
+                .ok{
+                    width:max-content;
+                }
+                .ok h4{
+                    background-color: #082792;
+                    width:100%;
+                    padding-left:120px;
+                    padding-right: 120px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color:white;
+                    font-family: inknut antiqua,sans-serif;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 2px black;
+                    text-align: center;
+                }
+                .okArea{
+                    background-color: white;
+                    box-shadow: 0px 1px 3px rgb(114, 112, 112);
+                    padding: 10px;
+                    overflow: auto;
+                    height:220px;
+                }
+                .okBox{
+                    background-color: rgb(3, 0, 100);
+                    border-radius:10px;
+                    padding:15px;
+                  
+                }
+                .okBox h1{
+                    font-size: 20px;
+                    color: white;
+                }
+
+                html,body{
+    background-color: #eef0f9;
+
+}
+.dbHeader{
+    background-color: #0D143C;
+    width:100%;
+    box-shadow: 0px 2px 2px rgb(120, 118, 118);
+    position: fixed;
+}
+  
+.dbHeaderTitle{
+  color:white;
+  font-size: 26px;
+  padding-left: 30px;
+  font-family: Inter,sans-serif;
+  font-style: italic;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+.dbHeaderTagline{
+  top:0;
+  color:white;
+  padding-left:31px;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.dbSecDiv{
+    display: flex;
+}
+
+.normal{
+    margin-top: 20px;
+    font-size:20px;
+    margin-left: 25px;
+    color:white;
+    text-decoration: none;
+    font-family: itim,sans-serif;
+    letter-spacing: 2px;
+}
+
+.normal:hover{
+    color:rgb(175, 172, 172);
+    text-decoration: none;
+    font-family: itim,sans-serif;
+    letter-spacing: 2px;
+}
+
+.active{
+    color:rgba(255, 255, 255, 0.714);
+}
+
+
+            </style>
+        </head>
+        <body>
+            <div class="container-fluid">
+            <div class='dbHeader row'>
+                <div class="col-md-3">
+                    <h1 class='dbHeaderTitle'>Medi Minder</h1>
+                    <h3 class='dbHeaderTagline'>Innovative Solutions for Smarter Healthcare</h3>
+                    </div>
+                    <div class="col-md-9 dbSecDiv">
+                        <a href="#" class="normal active">Dashboard</a>
+                        <a href="reminders.html" class="normal">Reminders</a>
+                        <a href="#" class="normal" onclick="alert('Coming Soon..')">Prescription</a>
+                        <a href="#" class="normal" onclick="alert('Coming Soon..')">E-Connect</a>
+                        <a href="#" class="normal" onclick="alert('Coming Soon..')">Conselling</a>
+                        <a href="#" class="normal" onclick="alert('Coming Soon..')">Shop</a>
+                        <a href="#" class="normal" onclick="alert('Developing Soon..')">Settings</a>
+                        <a href="index.html" class="normal">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dbContentArea container-fluid">
+                <h3>Hi! Good To See you Again!</h3>
+                <div class="container-fluid codeZero">
+                    <div class="row">
+                        <div class="col-sm-4 ch">
+                            <h4 class="remindTitle">Reminders</h4>
+                            <div class="reminderBox">
+                                <div class="box">
+                                    <h1>Early Morning Before Breakfast - Panatacid 5mg</h1>
+                                </div>
+                                <div class="box">
+                                    <h1>Drink Atleast 8 Glass Water</h1>
+                                </div>
+                                <div class="box">
+                                    <h1>Pantacid-10mg morning before breakfast</h1>
+                                </div>
+                                <div class="box">
+                                    <h1>Sumag - Apply around wounded area in Evening</h1>
+                                </div>
+                                <div class="box">
+                                    <h1>Mucinac-5mg: After Lunch Every Alternate day</h1>
+                                </div>
+
+                            </div>                           
+                        </div>
+                        <div class="col-sm-8 chh">
+                            <h4 class="titleDHU">Your Daily Health Updates</h4>
+                            <div class="sub1 row">
+                                <div class="BoxDHU">
+                                    <h1>Body Temperature</h1>
+                                    <p>98.2°F</p>
+                                    <h3>&nbsp;</h3>
+
+                                </div>
+                                <div class="BoxDHU">
+                                    <h1>Blood Pressure</h1>
+                                    <p>119/80 mm of Hg</p>
+                                    <h3>(Normal)</h3>
+
+                                </div>
+                                <div class="BoxDHU">
+                                    <h1>Heart Rate</h1>
+                                    <p>70 bpm</p>
+                                    <h3>(Low)</h3>
+
+                                </div>
+                                <div class="BoxDHU">
+                                    <h1>Body Mass Index</h1>
+                                    <p>20.3</p>
+                                    <h3 style="color:red">(Under Nourished)</h3>
+
+                                </div>
+                            </div>
+                            <div class="sub2">
+                                <div class="BoxDHU">
+                                    <h1>Steps</h1>
+                                    <p>1000</p>
+                                    <h3>(You are 2089 steps away from your daily targets)</h3>
+
+                                </div>
+                                <div class="BoxDHU">
+                                    <h1>Sleep Duration</h1>
+                                    <p>7h 30min</p>
+                                    <h3>(In past 24 Hours)</h3>
+
+                                </div>
+                                <div class="BoxDHU">
+                                    <h1>Cautions</h1>
+                                    <p style="color:red">Diabetes</p>
+                                    <h3>&nbsp;</h3>
+
+                                </div>
+                                <div class="BoxDHU">
+                                    <h1>Your Health Score</h1>
+                                    <p>67/100</p>
+                                    <h3>(Good)</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ch">
+                            <h4 class="presTitle">Prescriptions</h4>
+                            <div class="reminderBox">
+                                <div class="box">
+                                    <h1>3/10/2023 - Dr. Shalendra Pandey(Diabetologist) - Fortis Hospital</h1>
+                                </div>
+                                <div class="box">
+                                    <h1>30/9/2023 - Dr. Sunjay Sinha(Diabetologist) - Fortis Hospital</h1>
+                                </div>
+                                <div class="box">
+                                    <h1>15/9/2023 - Dr. Shalendra Pandey(M.D.Medicine) - Shanti Gopal Hospital</h1>
+
+                            </div>  
+                                                   
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="col-sm-4 fdWhole">
+                        <h4 class='titleDU'>Food Diary</h4>
+                        <div class="some">
+                            <img src="pie.png" alt="pie">
+                        </div>
+                        <div class="something">
+                            <div class="stBox">
+                                <h1>BreakFast - </h1>
+                                <h1>Fruits(Banana, Guava & Beetroot)</h1>
+                                <h1>Light Cereals</h1>
+                            </div>
+                            <div class="stBox">
+                                <h1>Lunch -</h1>
+                                <h1>Pulses(Any) with not more than 3 chapattis</h1>
+                                <h1>Curd or Buttermilk preffered</h1>
+                            </div>
+
+                            <div class="stBox">
+                                <h1>Snacks -</h1>
+                                <h1>Tea or Coffee with minimal or no sugar</h1>
+                            </div>
+
+                            <div class="stBox">
+                                <h1>Dinner -</h1>
+                                <h1>Rice or Vegetables(Green or any other)</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 ok">
+                        <h4>Work Out</h4>
+                        <div class="okArea">
+                            <div class="okBox">
+                                <h1>General Stretching - 10 minutes</h1>
+                            </div><br>
+                            <div class="okBox">
+                                <h1>Light Jumping - 2 minutes</h1>
+                            </div><br>
+                            <div class="okBox">
+                                <h1>Fast Walking - 20 minutes</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+                    </div>
+                </div>
+               
+            </div>
+   
+        
+
+        </body>
+
+    </html>
