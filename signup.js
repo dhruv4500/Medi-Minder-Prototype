@@ -39,7 +39,7 @@ class Signup{
 
         this.loginButton = createButton("Sign Up").class('loginButton')
         this.imageArea = createDiv().class('loginPageImageArea col-sm-6')
-        this.logoImage=createImg('../Images/logo.png').class('loginPageLogoImage')
+        this.logoImage=createImg('Images/logo.png').class('loginPageLogoImage')
         this.imageDiv=createDiv().class('loginPageImageDiv')
 
         this.loading=createButton('<span class=\'spinner-grow spinner-grow-sm\'></span>&nbsp; Loading..').class('loginPageLoadingButton')
