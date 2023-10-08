@@ -49,14 +49,14 @@ class Reminder{
             <h3 class='dbHeaderTagline'>Innovative Solutions for Smarter Healthcare</h3>
             </div>
             <div class="col-md-9 dbSecDiv">
-                <a href="../dashboard.html" class="normal">Dashboard</a>
-                <a href="../reminders.html" class="normal active">Reminders</a>
+                <a href="dashboard.html" class="normal">Dashboard</a>
+                <a href="reminders.html" class="normal active">Reminders</a>
                 <a href="#" class="normal" onclick="alert('Coming Soon..')">Prescription</a>
                 <a href="#" class="normal" onclick="alert('Coming Soon..')">E-Connect</a>
                 <a href="#" class="normal" onclick="alert('Coming Soon..')">Conselling</a>
                 <a href="#" class="normal" onclick="alert('Coming Soon..')">Shop</a>
                 <a href="#" class="normal" onclick="alert('Devoloping Soon..')">Settings</a>
-                <a href="../index.html" class="normal">Sign Out</a>
+                <a href="index.html" class="normal">Sign Out</a>
             </div>
         </div>
     </div>
